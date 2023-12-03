@@ -1,0 +1,608 @@
+/*S T A R T G l o b a l */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #7F7F90;
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-size: 1rem;
+
+}
+
+/* E N D G L O B A L */
+
+
+/*Start Nav*/
+
+nav {
+    height: 10vh;
+}
+
+.navbar-nav .nav-link.active {
+    color: yellow;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.navbar li a:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0px;
+    left: 10%;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+    width: 70%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: yellow;
+}
+
+
+
+
+/*End Nav*/
+
+/*Start Header*/
+
+
+#home {
+    background-image: url("../imgs/space-background-with-total-solar-eclipse_97886-2042.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.layer {
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+#home .scroll-about {
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: up-down 1s linear infinite;
+}
+
+#home .scroll-about::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 13px;
+    background-color: white;
+
+}
+
+@keyframes up-down {
+    0% {
+        bottom: 30px;
+
+    }
+
+    50% {
+
+        bottom: 60px;
+
+    }
+
+    100% {
+        bottom: 30px;
+
+    }
+}
+
+#home h2{
+    color: #00d0ff;
+    font-size: 2rem;
+}
+
+#home h2::after {
+    content: "|";
+    animation-name: typing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin-left: 10px;
+    font-size: 2.5rem;
+    color: #4dff03;
+
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    1.75% {
+        content: "M|";
+    }
+
+    3.5% {
+        content: "Mo|";
+    }
+
+    5.25% {
+        content: "Mon|";
+    }
+
+    7% {
+        content: "Mone|";
+    }
+
+    8.75% {
+        content: "Money|";
+    }
+
+    10.5% {
+        content: "Money O|";
+    }
+
+    12.25% {
+        content: "Money On|";
+    }
+
+    14% {
+        content: "Money Onl|";
+    }
+
+    15.75% {
+        content: "Money Onli|";
+    }
+
+    17.5% {
+        content: "Money Onlin|";
+    }
+
+    19.25% {
+        content: "Money Online|";
+    }
+
+    21% {
+        content: "Money Onlin|";
+    }
+
+    22.75% {
+        content: "Money Onli|";
+    }
+
+    24.5% {
+        content: "Money Onl|";
+    }
+
+    26.25% {
+        content: "Money On|";
+    }
+
+    28% {
+        content: "Money O|";
+    }
+
+    29.75% {
+        content: "Money|";
+    }
+
+    31.5% {
+        content: "Mone|";
+    }
+
+    33.25% {
+        content: "Mon|";
+    }
+
+    35% {
+        content: "Mo|";
+    }
+
+    36.75% {
+        content: "M|";
+    }
+
+    38.5% {
+        content: "|";
+    }
+
+    40.25% {
+        content: "C|";
+    }
+
+    42% {
+        content: "Cr|";
+    }
+
+    43.75% {
+        content: "Cry|";
+    }
+
+    45.5% {
+        content: "Cryp|";
+    }
+
+    47.25% {
+        content: "Crypt|";
+    }
+
+    49% {
+        content: "Crypto|";
+    }
+
+    50.75% {
+        content: "Crypto|";
+    }
+
+    52.5% {
+        content: "Crypto C|";
+    }
+
+    54.25% {
+        content: "Crypto Cu|";
+    }
+
+    56% {
+        content: "Crypto Cur|";
+    }
+
+    57.75% {
+        content: "Crypto Curr|";
+    }
+
+    59.5% {
+        content: "Crypto Curru|";
+    }
+
+    61.5% {
+        content: "Crypto Currun|";
+    }
+
+    63% {
+        content: "Crypto Currunc|";
+    }
+
+    64.75% {
+        content: "Crypto Curruncy|";
+    }
+
+    66.5% {
+        content: "Crypto Currunc|";
+    }
+
+    68.25% {
+        content: "Crypto Currun|";
+    }
+
+    70% {
+        content: "Crypto Curru|";
+    }
+
+    71.25% {
+        content: "Crypto Curr|";
+    }
+
+    73.5% {
+        content: "Crypto Cur|";
+    }
+
+    75.25% {
+        content: "Crypto Cu|";
+    }
+
+    77% {
+        content: "Crypto C|";
+    }
+
+    78.75% {
+        content: "Crypto|";
+    }
+
+    80.5% {
+        content: "Crypt|";
+    }
+
+    82.25% {
+        content: "Cryp|";
+    }
+
+    84% {
+        content: "Cry|";
+    }
+
+    85.75% {
+        content: "Cr|";
+    }
+
+    87.5% {
+        content: "C|";
+    }
+
+    89.25% {
+        content: "|";
+    }
+
+    91% {
+        content: "C|";
+    }
+
+    92.75% {
+        content: "CA|";
+    }
+
+    94.5% {
+        content: "CAS|";
+    }
+
+    96.25% {
+        content: "CASH|";
+    }
+
+    98% {
+        content: "CA|";
+    }
+
+    100% {
+        content: "C|";
+    }
+}
+
+/*End Header*/
+
+/*About Header*/
+#services {
+    background-color: black;
+}
+
+
+#services .card-body {
+    line-height: 1.5rem;
+}
+
+.card-footer {
+    border-color: rgba(255, 255, 255, 0.329);
+    z-index: 22135;
+}
+
+
+
+.box {
+    position: relative;
+    transition: 0.5s;
+
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+
+.box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+
+}
+
+.box:hover:before,
+.box:hover:after {
+    transform: skewX(0deg);
+    left: 3px;
+    width: 98%;
+}
+
+.box:nth-child(1):before,
+.box:nth-child(1):after {
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+
+.lox {
+    position: relative;
+    transition: 0.5s;
+
+}
+
+.lox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+
+.lox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+
+}
+
+.lox:hover:before,
+.lox:hover:after {
+    transform: skewX(0deg);
+    left: 3px;
+    width: 98%;
+}
+
+.lox:nth-child(1):before,
+.lox:nth-child(1):after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.fox {
+    position: relative;
+    transition: 0.5s;
+
+}
+
+.fox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+
+.fox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+
+}
+
+.fox:hover:before,
+.fox:hover:after {
+    transform: skewX(0deg);
+    left: 3px;
+    width: 98%;
+}
+
+.fox:nth-child(1):before,
+.fox:nth-child(1):after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.card img {
+    z-index: 12121;
+}
+
+.card-body {
+    z-index: 1111;
+}
+
+/*ENd About*/
+
+
+
+/*Contact Start*/
+
+#contact {
+    width: 100%;
+}
+
+.circle{
+    transition: all 1s;
+}
+
+#contact .cont-in:hover .circle{
+    background-color: #fff;
+    color: #4fff03;
+}
+
+  
+.btn-dd{
+    font-size:1.3rem ;
+    width: 150px;
+    height: 50px;
+    color: #ff0058;
+    font-weight: 900;
+    transition: all 0.2s;
+    border-radius: 60px;
+}
+.btn-dd:hover{
+    font-size: 1.3rem;
+    color: #00ec00;
+    background-color: #151515;
+}
+
+/*Contact End*/
+
+#footer{
+    background-color: #4fff03;
+}
+
+
+
+#footer p{
+    color: #748182;
+    font-size: 15px;
+    word-spacing: 2px;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+  }
+
+  #footer .icons i {
+    padding: 0 5px;
+    color: #151515;
+    font-size: 1rem;
+  }
+  
+  #footer .icons .ico-bg {
+  
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  #footer .icons a:hover .ico-bg{
+    background-color: #fff;
+   
+  }
+  #footer .icons a:hover i{
+    color: #ff0058;
+   
+  }
+  
+  
